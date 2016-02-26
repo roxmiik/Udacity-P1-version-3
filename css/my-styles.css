@@ -1,0 +1,35 @@
+body {
+	/* font-family: 'Lato', sans-serif; */
+	
+	font-family: 'Roboto Slab', serif;
+	color: #676858;
+	font-weight: 300;
+	padding-top: 70px;
+}
+
+.text-muted {
+	color: #bcbbbb;
+}
+
+.text-thin{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+}
+
+.title-super {
+	font-size: 4.2em;
+	color: #ff0dff;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+/* Jumbotron
+================================= */
+.device {
+	width: 360px;
+	height: 450px;
+	background: url('../img/girl.png') no-repeat;
+	background-position:  50% 15%;
+}
