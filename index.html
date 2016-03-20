@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Carmeanu Portfolio site</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- Google Fonts I wanted Roboto Slab and Open Sans Condensed -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
 	<!-- Latest compiled and minified Bootswatch Cerulean theme for Bootstrap -->
@@ -22,7 +24,7 @@
   <body>
 	<!--Navbar -->
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
+		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
@@ -31,31 +33,32 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Roxana Carmen Kakarash</a>
+				<a class="navbar-brand" href="#page-top">
+					<img alt="Brand" src="img/main_logo.png">
+				</a>
+				<p class="navbar-text">Roxana Carmen Kakarash</p>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
 	
 	
-    
-	
 		<!-- Jumbotron -->
 		<div class="jumbotron">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
-						<h1>Web Developer & Healer</h1>
-						<p>I can build beautiful websites using HTML5, CSS3, JavaScript, jQuery and Bootstrap.</p>
-						<p>So, that was my technical side but, I'm also a healer doing wonders with essential oils, tinctures and just herbs.</p>
+						<h1 class="name">Web Developer & Healer</h1>
+						<p class="skills">I can build beautiful websites using HTML5, CSS3, JavaScript, jQuery and Bootstrap.</p>
+						<p class="skills">So, that was my technical side but, I'm also a healer doing wonders with essential oils, tinctures and just herbs.</p>
 					</div>
 					<div class="col-sm-6">
 						<div class="device center-block img-responsive"></div>
@@ -75,10 +78,10 @@
 				</div>
 				<div class="row text-justify">
 					<div class="col-sm-5 col-sm-offset-1">
-						<p>I learnt how to code by taking online Web Development courses from Udemy, Team Treehouse and Udacity. I felt that taking classes in different places has made me understand new concepts better and the lessons completed each other.</p>
+						<p class="section-p">I learnt how to code by taking online Web Development courses from Udemy, Team Treehouse and Udacity. I felt that taking classes in different places has made me understand new concepts better and the lessons completed each other.</p>
 					</div>
 					<div class="col-sm-5">
-						<p>There were many challenges and very little time for study with a full-time job and other more important duties, but the time I've put into Web Development is finally paying off. I love what I'm doing, I love building websites and I learn something new ALL the time!</p>
+						<p class="section-p">There were many challenges and very little time for study with a full-time job and other more important duties, but the time I've put into Web Development is finally paying off. I love what I'm doing, I love building websites and I learn something new ALL the time!</p>
 					</div>
 				</div>
 			</div>
@@ -90,7 +93,7 @@
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<h2>Portfolio</h2>
-						<hr class="star-primary">
+						<hr class="star-light">
 					</div>
 				</div>
 				<div class="row">
@@ -102,7 +105,7 @@
 								</div>
 							</div>
 							<img class="img-responsive src="img/castle_2048.jpg"
-								sizes="(max-width: 750px) 100vw, (min-width: 751px) (calc(100% - 30px)/3)"
+								sizes="(max-width: 750px) 100vw, (min-width: 751px) calc((100% - 30px)/3)"
 								srcset="img/castle-750_2x.jpg 750w, img/castle_2048.jpg 2048w" 
 							alt="Ludwig's Castle">
 						</a>
@@ -115,7 +118,7 @@
 								</div>
 							</div>
 							<img class="img-responsive src="img/louvre_2048.jpg"
-								sizes="(max-width: 750px) 100vw, (min-width: 751px) (calc(100% - 30px)/3)"
+								sizes="(max-width: 750px) 100vw, (min-width: 751px) calc((100% - 30px)/3)"
 								srcset="img/louvre-750_2x.jpg 750w, img/louvre_2048.jpg 2048w" 
 							alt="Louvre">
 						</a>
@@ -128,7 +131,7 @@
 								</div>
 							</div>
 							<img class="img-responsive src="img/palace_2048.jpg"
-								sizes="(max-width: 750px) 100vw, (min-width: 751px) (calc(100% - 30px)/3)"
+								sizes="(max-width: 750px) 100vw, (min-width: 751px) calc((100% - 30px)/3)"
 								srcset="img/palace-750_2x.jpg 750w, img/palace_2048.jpg 2048w" 
 							alt="Mysterious Palace">
 						</a>
@@ -136,35 +139,153 @@
 				</div>
 			</div>
 		</section>
-		
+		<!-- Portfolio Modals -->
+		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>	
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+								<h2>Ludwig's Castle</h2>
+								<hr class="star-light">
+								<img src="img/castle_2048.jpg" class="img-responsive img-centered" alt="Ludwig's Castle in Bavaria">
+								<p>Neuschwanstein Castle <span class="blue-span">(German: Schloss Neuschwanstein, pronounced [nɔʏˈʃvaːnʃtaɪn], English: "New Swanstone Castle"[1])</span> is a nineteenth-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany. The palace was commissioned by Ludwig II of Bavaria as a retreat and as an homage to Richard Wagner. Ludwig paid for the palace out of his personal fortune and by means of extensive borrowing, rather than Bavarian public funds.</p>
+								<ul class="list-inline item-details">
+									<li>Client:
+										<strong><a href="http://startbootstrap.com">My Photography Project</a>
+										</strong>
+									</li>
+									<li>Date:
+										<strong><a href="http://startbootstrap.com">March 2016</a>
+										</strong>
+									</li>
+									<li>Service:
+										<strong><a href="http://startbootstrap.com">Web Development</a>
+										</strong>
+									</li>
+								</ul>
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+								<h2>Project Title</h2>
+								<hr class="star-light">
+								<img src="img/louvre_2048.jpg" class="img-responsive img-centered" alt="">
+								<p>The museum is housed in the Louvre Palace, originally built as a fortress in the late 12th century under Philip II. Remnants of the fortress are visible in the basement of the museum. The building was extended many times to form the present Louvre Palace. In 1682, Louis XIV chose the Palace of Versailles for his household, leaving the Louvre primarily as a place to display the royal collection, including, from 1692, a collection of ancient Greek and Roman sculpture.[2] In 1692, the building was occupied by the Académie des Inscriptions et Belles Lettres and the Académie Royale de Peinture et de Sculpture, which in 1699 held the first of a series of salons. The Académie remained at the Louvre for 100 years.[3] During the French Revolution, the National Assembly decreed that the Louvre should be used as a museum to display the nation's masterpieces.</p>
+								<ul class="list-inline item-details">
+									<li>Client:
+										<strong><a href="http://startbootstrap.com">Visiting my beautiful Louvre</a>
+										</strong>
+									</li>
+									<li>Date:
+										<strong><a href="http://startbootstrap.com">March 2016</a>
+										</strong>
+									</li>
+									<li>Service:
+										<strong><a href="http://startbootstrap.com">Web Development</a>
+										</strong>
+									</li>
+								</ul>
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>A Mysterious Palace</h2>
+                            <hr class="star-light">
+                            <img src="img/palace_2048.jpg" class="img-responsive img-centered" alt="">
+                            <p>I'm still searching for the location of this mysterious and majestic palace.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Under investigation</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">March 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>	
+			
 		<!-- Contact Section -->
 		<section id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<h2>Contact</h2>
-						<hr class="star-primary">
+						<hr class="star-light">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2">
 						<form name="sentMessage" id="contactForm">
 							<div class="row">
-								<div class="form-group input-group-lg col-xs-12 floating-label-form-group controls">
+								<div class="form-group col-xs-12 floating-label-form-group controls">
+									<div class="input-group input-group-lg">
 									<label for="name">Name</label>
-									<input type="text" class="form-control" placeholder="Name" id="name" placeholder="Name">
+									<input type="text" class="form-control" id="name" placeholder="Name">
+									</div>
 								</div>
 							</div>
 							<div class="row">
-								<div class="form-group input-group-lg col-xs-12 floating-label-form-group controls">
+								<div class="form-group col-xs-12 floating-label-form-group controls">
+									<div class="input-group input-group-lg">
 									<label for="email">Email Address</label>
 									<input type="email" class="form-control" id="email" placeholder="Email Address">
+									</div>
 								</div>
 							</div>
 							<div class="row">
-								<div class="form-group input-group-lg col-xs-12 floating-label-form-group controls">
+								<div class="form-group col-xs-12 floating-label-form-group controls">
+									<div class="input-group input-group-lg">
 									<label for="phone">Phone Number</label>
 									<input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+									</div>
 								</div>
 							</div>
 							<div class="row">
@@ -176,7 +297,7 @@
 							<br>
 							<div class="row">
 								<div class="form-group col-xs-12">
-									<button class="btn btn-primary btn-lg" type="submit" value="submit">Send</button>
+									<button type="button" class="btn btn-primary btn-lg" value="submit">Send</button>
 								</div>
 							</div>
 						</form>
@@ -192,31 +313,22 @@
 					<div class="row">
 						<div class="footer-col col-sm-4">
 							<h3>Location</h3>
-							<p><br>Seattle, WA</p>
+							<p class="footer-p"><br>Seattle, WA</p>
 						</div>
 						<div class="footer-col col-sm-4">
 							<h3>Around the Web</h3>
 							<ul class="list-inline">
 								<li>
-									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+									<a href="https://twitter.com/roxmikloveskale" target="_blank" class="btn btn-social-icon btn-twitter btn-outline"><i class="fa fa-fw fa-twitter fa-4x"></i></a>
 								</li>
 								<li>
-									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-								</li>
-								<li>
-									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-								</li>
-								<li>
-									<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+									<a href="https://www.instagram.com/carmiik/" target="_blank" class="btn btn-social-icon btn-instagram btn-outline"><i class="fa fa-instagram fa-4x"></i></a>
 								</li>
 							</ul>
 						</div>
 						<div class="footer-col col-sm-4">
-							<h3>About Freelancer</h3>
-							<p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+							<h3>Thanks for viewing my portfolio!</h3>
+							<p class="footer-p">If you want to hire me for your business, see your preferred method of contact and get in touch with me soon.</p>
 						</div>
 					</div>
 				</div>
@@ -225,7 +337,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							Copyright &copy; Roxana Carmen Kakarash 2016
+							<p>Copyright &copy; Roxana Carmen Kakarash 2016</p>
 						</div>
 					</div>
 				</div>
