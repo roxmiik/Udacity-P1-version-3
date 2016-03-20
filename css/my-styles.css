@@ -66,6 +66,10 @@ section {
     font-weight: 700;
 }
 }
+
+.navbar .navbar-nav li a:hover {
+	color: #0046c0;
+}
 	
 /* Jumbotron
 ================================= */
